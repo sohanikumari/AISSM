@@ -1,0 +1,13 @@
+{
+  "name": "@lastmile-aid/shared",
+  "version": "1.0.0",
+  "description": "Shared types, schemas and invariants for LastMile Aid",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}
