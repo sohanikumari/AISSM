@@ -49,7 +49,6 @@ export const StatusBadge: React.FC<StatusBadgeProps> = ({ status, className }) =
       );
 
     // Task statuses
-    case 'OPEN':
     case 'AVAILABLE':
       return (
         <span className={cn('inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-50 text-sky-700 dark:bg-sky-950/40 dark:text-sky-400 border border-sky-200 dark:border-sky-800', className)}>

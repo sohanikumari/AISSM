@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { createHashRouter, Navigate } from 'react-router-dom';
 import { AppShell } from '../components/layout/AppShell';
 import { RequireAuth } from '../components/auth/RequireAuth';
 
@@ -29,7 +29,7 @@ const Protected = ({ children }: { children: React.ReactNode }) => (
   </AppShell>
 );
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   // ── Public routes (no login required) ─────────────────────────────────────
   {
     path: '/',
